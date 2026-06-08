@@ -1,0 +1,31 @@
+gnb_id: 1
+ran_node_name: srsgnb01
+
+log:
+  filename: /tmp/gnb.log
+  all_level: info
+
+pcap:
+  mac_enable: false
+  ngap_enable: false
+
+cu_cp:
+  amf:
+    addr: 127.0.0.8
+    bind_addr: 127.0.0.1
+
+ru_sdr:
+  device_driver: uhd
+  device_args: type=b200
+  srate: 23.04
+  tx_gain: 76
+  rx_gain: 40
+
+cell_cfg:
+  dl_arfcn: 520002
+  band: 41
+  channel_bandwidth_MHz: 20
+  common_scs: 15
+  plmn: "20893"
+  tac: 1
+  pci: 1
